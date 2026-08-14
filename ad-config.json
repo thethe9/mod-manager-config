@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "popup": {
+    "enabled": false,
+    "title": "欢迎使用 MOD Manager",
+    "image": "",
+    "link": "",
+    "intervalDays": 3
+  },
+  "banner": {
+    "enabled": false,
+    "image": "",
+    "link": "",
+    "alt": ""
+  },
+  "detail": {
+    "enabled": false,
+    "title": "推荐内容",
+    "image": "",
+    "link": "",
+    "description": ""
+  }
+}

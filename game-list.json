@@ -1,0 +1,363 @@
+{
+  "version": "1.1",
+  "games": [
+    {
+      "id": "stellar-blade",
+      "name": "剑星",
+      "steamAppId": "1365610",
+      "coverGradient": "linear-gradient(145deg, #1a0a2e, #3d1e5c, #0d0520)",
+      "description": "Stellar Blade - 动作 RPG",
+      "modCount": 0,
+      "category": "action",
+      "tags": ["action", "rpg"],
+      "savePath": "%USERPROFILE%/AppData/Local/SB/Saved",
+      "autoLocate": {
+        "gameDir": [
+          { "strategy": "steam", "steamAppId": "1365610", "installDir": "StellarBlade", "label": "Steam 库（AppId 1365610）" },
+          { "strategy": "glob", "pattern": "StellarBlade*", "label": "扫描 Steam common 目录" }
+        ],
+        "savePath": [
+          { "strategy": "template", "template": "%USERPROFILE%/AppData/Local/SB/Saved", "label": "默认存档目录" },
+          { "strategy": "template", "template": "%USERPROFILE%/AppData/Local/SB/Saved", "requireExists": false, "label": "默认存档目录（尚未生成）" }
+        ]
+      },
+      "modDir": "mods",
+      "modTargetDir": "SB/Content/Paks/~mods",
+      "modType": "folder",
+      "modScanMode": "file",
+      "modFileExtensions": [".pak", ".ucas", ".utoc"],
+      "frameworks": [],
+      "modCategories": ["服装", "角色", "武器", "场景", "音效", "UI", "其他"]
+    },
+    {
+      "id": "wukong",
+      "name": "黑神话：悟空",
+      "steamAppId": "2358720",
+      "coverGradient": "linear-gradient(145deg, #2d1b00, #4a2800, #1a0f00)",
+      "description": "Black Myth Wukong - 动作 RPG",
+      "modCount": 20242,
+      "category": "hot",
+      "tags": ["hot", "action", "rpg"],
+      "savePath": "%USERPROFILE%/AppData/Local/b1/Saved",
+      "autoLocate": {
+        "gameDir": [
+          { "strategy": "steam", "steamAppId": "2358720", "installDir": "BlackMythWukong", "label": "Steam 库（AppId 2358720）" },
+          { "strategy": "glob", "pattern": "BlackMythWukong*", "label": "扫描 Steam common 目录" },
+          { "strategy": "glob", "pattern": "*Black Myth*", "label": "扫描 Steam common 目录（别名）" }
+        ],
+        "savePath": [
+          { "strategy": "template", "template": "%USERPROFILE%/AppData/Local/b1/Saved", "label": "默认存档目录" },
+          { "strategy": "template", "template": "%USERPROFILE%/AppData/Local/b1/Saved", "requireExists": false, "label": "默认存档目录（尚未生成）" }
+        ]
+      },
+      "modDir": "mods",
+      "modTargetDir": "mods",
+      "modType": "folder",
+      "modScanMode": "folder",
+      "modFileExtensions": [],
+      "frameworks": [
+        { "id": "ue4ss", "name": "UE4SS", "required": true, "minVersion": "3.0.0" }
+      ],
+      "modCategories": ["服装", "角色", "武器", "场景", "音效", "UI", "其他"]
+    },
+    {
+      "id": "cyberpunk",
+      "name": "赛博朋克 2077",
+      "steamAppId": "1091500",
+      "coverGradient": "linear-gradient(145deg, #0a1628, #1e3a5f, #000d1a)",
+      "description": "Cyberpunk 2077 - 开放世界 RPG",
+      "modCount": 0,
+      "category": "rpg",
+      "tags": ["rpg", "open-world"],
+      "savePath": "%USERPROFILE%/Saved Games/CD Projekt Red/Cyberpunk 2077",
+      "autoLocate": {
+        "gameDir": [
+          { "strategy": "steam", "steamAppId": "1091500", "installDir": "Cyberpunk 2077", "label": "Steam 库（AppId 1091500）" },
+          { "strategy": "registry", "registryKey": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\GOG.com\\Games\\1423049311", "registryValue": "path", "label": "GOG 安装记录" },
+          { "strategy": "glob", "pattern": "Cyberpunk 2077*", "label": "扫描 Steam common 目录" }
+        ],
+        "savePath": [
+          { "strategy": "template", "template": "%USERPROFILE%/Saved Games/CD Projekt Red/Cyberpunk 2077", "label": "默认存档目录" },
+          { "strategy": "template", "template": "%USERPROFILE%/Saved Games/CD Projekt Red/Cyberpunk 2077", "requireExists": false, "label": "默认存档目录（尚未生成）" }
+        ]
+      },
+      "modDir": "mods",
+      "modTargetDir": "mods",
+      "modType": "folder",
+      "modScanMode": "folder",
+      "modFileExtensions": [],
+      "frameworks": [],
+      "modCategories": ["服装", "角色", "武器", "场景", "音效", "UI", "其他"]
+    },
+    {
+      "id": "elden-ring",
+      "name": "艾尔登法环",
+      "steamAppId": "1245620",
+      "coverGradient": "linear-gradient(145deg, #1a1206, #3d2e14, #0d0a03)",
+      "description": "Elden Ring - 魂类动作 RPG",
+      "modCount": 0,
+      "category": "action",
+      "tags": ["action", "rpg", "souls"],
+      "savePath": "%USERPROFILE%/AppData/Roaming/EldenRing",
+      "autoLocate": {
+        "gameDir": [
+          { "strategy": "steam", "steamAppId": "1245620", "installDir": "ELDEN RING", "label": "Steam 库（AppId 1245620）" },
+          { "strategy": "steam", "steamAppId": "1245620", "installDir": "ELDEN RING", "relative": "Game", "label": "Steam 库 · Game 子目录" },
+          { "strategy": "glob", "pattern": "ELDEN RING*", "label": "扫描 Steam common 目录" }
+        ],
+        "savePath": [
+          { "strategy": "template", "template": "%APPDATA%/EldenRing", "label": "默认存档目录" },
+          { "strategy": "template", "template": "%USERPROFILE%/AppData/Roaming/EldenRing", "requireExists": false, "label": "默认存档目录（尚未生成）" }
+        ]
+      },
+      "modDir": "mods",
+      "modTargetDir": "mods",
+      "modType": "folder",
+      "modScanMode": "folder",
+      "modFileExtensions": [],
+      "frameworks": [],
+      "modCategories": ["服装", "角色", "武器", "场景", "音效", "UI", "其他"]
+    },
+    {
+      "id": "palworld",
+      "name": "幻兽帕鲁",
+      "steamAppId": "1623730",
+      "coverGradient": "linear-gradient(145deg, #0a2818, #1a5030, #06140c)",
+      "description": "Palworld - 生存建造",
+      "modCount": 0,
+      "category": "survival",
+      "tags": ["survival", "crafting"],
+      "savePath": "%USERPROFILE%/AppData/Local/Pal/Saved",
+      "autoLocate": {
+        "gameDir": [
+          { "strategy": "steam", "steamAppId": "1623730", "installDir": "Palworld", "label": "Steam 库（AppId 1623730）" },
+          { "strategy": "glob", "pattern": "Palworld*", "label": "扫描 Steam common 目录" }
+        ],
+        "savePath": [
+          { "strategy": "template", "template": "%USERPROFILE%/AppData/Local/Pal/Saved", "label": "默认存档目录" },
+          { "strategy": "template", "template": "%USERPROFILE%/AppData/Local/Pal/Saved", "requireExists": false, "label": "默认存档目录（尚未生成）" }
+        ]
+      },
+      "modDir": "Mods",
+      "modTargetDir": "Mods",
+      "modType": "folder",
+      "modScanMode": "folder",
+      "modFileExtensions": [],
+      "frameworks": [],
+      "modCategories": ["服装", "角色", "武器", "场景", "音效", "UI", "其他"]
+    },
+    {
+      "id": "baldurs-gate3",
+      "name": "博德之门 3",
+      "steamAppId": "1086940",
+      "coverGradient": "linear-gradient(145deg, #140d01, #2d1f0a, #080500)",
+      "description": "Baldur's Gate 3 - CRPG",
+      "modCount": 0,
+      "category": "rpg",
+      "tags": ["rpg", "crpg", "turn-based"],
+      "savePath": "%USERPROFILE%/AppData/Local/Larian Studios/Baldur's Gate 3/PlayerProfiles/Public/Savegames/Story",
+      "autoLocate": {
+        "gameDir": [
+          { "strategy": "steam", "steamAppId": "1086940", "installDir": "Baldurs Gate 3", "label": "Steam 库（AppId 1086940）" },
+          { "strategy": "glob", "pattern": "Baldurs Gate 3*", "label": "扫描 Steam common 目录" },
+          { "strategy": "glob", "pattern": "*Baldur*Gate*", "label": "扫描 Steam common 目录（别名）" }
+        ],
+        "savePath": [
+          { "strategy": "template", "template": "%USERPROFILE%/AppData/Local/Larian Studios/Baldur's Gate 3/PlayerProfiles/Public/Savegames/Story", "label": "默认存档目录" },
+          { "strategy": "template", "template": "%USERPROFILE%/AppData/Local/Larian Studios/Baldur's Gate 3/PlayerProfiles/Public", "label": "存档根目录" },
+          { "strategy": "template", "template": "%USERPROFILE%/AppData/Local/Larian Studios/Baldur's Gate 3/PlayerProfiles/Public/Savegames/Story", "requireExists": false, "label": "默认存档目录（尚未生成）" }
+        ]
+      },
+      "modDir": "Mods",
+      "modTargetDir": "Mods",
+      "modType": "folder",
+      "modScanMode": "folder",
+      "modFileExtensions": [],
+      "frameworks": [],
+      "modCategories": ["服装", "角色", "武器", "场景", "音效", "UI", "其他"]
+    },
+    {
+      "id": "sekiro",
+      "name": "只狼：影逝二度",
+      "steamAppId": "814380",
+      "coverGradient": "linear-gradient(145deg, #1a1410, #332a22, #0d0a08)",
+      "description": "Sekiro: Shadows Die Twice - 魂类动作",
+      "modCount": 0,
+      "category": "action",
+      "tags": ["action", "souls"],
+      "savePath": "%USERPROFILE%/AppData/Roaming/Sekiro",
+      "autoLocate": {
+        "gameDir": [
+          { "strategy": "steam", "steamAppId": "814380", "installDir": "Sekiro", "label": "Steam 库（AppId 814380）" },
+          { "strategy": "glob", "pattern": "Sekiro*", "label": "扫描 Steam common 目录" }
+        ],
+        "savePath": [
+          { "strategy": "template", "template": "%APPDATA%/Sekiro", "label": "默认存档目录" },
+          { "strategy": "template", "template": "%USERPROFILE%/AppData/Roaming/Sekiro", "requireExists": false, "label": "默认存档目录（尚未生成）" }
+        ]
+      },
+      "modDir": "mods",
+      "modTargetDir": "mods",
+      "modType": "folder",
+      "modScanMode": "folder",
+      "modFileExtensions": [],
+      "frameworks": [],
+      "modCategories": ["服装", "角色", "武器", "场景", "音效", "UI", "其他"]
+    },
+    {
+      "id": "hades2",
+      "name": "哈迪斯 2",
+      "steamAppId": "1145350",
+      "coverGradient": "linear-gradient(145deg, #1a0a1e, #3d153d, #0d0510)",
+      "description": "Hades II - Roguelike 动作",
+      "modCount": 0,
+      "category": "action",
+      "tags": ["action", "roguelike"],
+      "savePath": "%USERPROFILE%/Saved Games/Hades II",
+      "autoLocate": {
+        "gameDir": [
+          { "strategy": "steam", "steamAppId": "1145350", "installDir": "Hades II", "label": "Steam 库（AppId 1145350）" },
+          { "strategy": "glob", "pattern": "Hades I*", "label": "扫描 Steam common 目录" }
+        ],
+        "savePath": [
+          { "strategy": "template", "template": "%USERPROFILE%/Saved Games/Hades II", "label": "默认存档目录" },
+          { "strategy": "template", "template": "%USERPROFILE%/Saved Games/Hades II", "requireExists": false, "label": "默认存档目录（尚未生成）" }
+        ]
+      },
+      "modDir": "Mods",
+      "modTargetDir": "Mods",
+      "modType": "folder",
+      "modScanMode": "folder",
+      "modFileExtensions": [],
+      "frameworks": [],
+      "modCategories": ["服装", "角色", "武器", "场景", "音效", "UI", "其他"]
+    },
+    {
+      "id": "stardew",
+      "name": "星露谷物语",
+      "steamAppId": "413150",
+      "coverGradient": "linear-gradient(145deg, #1a2e14, #3d5c2a, #0d1a0a)",
+      "description": "Stardew Valley - 模拟经营",
+      "modCount": 0,
+      "category": "rpg",
+      "tags": ["simulation", "farming"],
+      "savePath": "%APPDATA%/StardewValley/Saves",
+      "autoLocate": {
+        "gameDir": [
+          { "strategy": "steam", "steamAppId": "413150", "installDir": "Stardew Valley", "label": "Steam 库（AppId 413150）" },
+          { "strategy": "glob", "pattern": "Stardew Valley*", "label": "扫描 Steam common 目录" }
+        ],
+        "savePath": [
+          { "strategy": "template", "template": "%APPDATA%/StardewValley/Saves", "label": "默认存档目录" },
+          { "strategy": "template", "template": "%APPDATA%/StardewValley/Saves", "requireExists": false, "label": "默认存档目录（尚未生成）" }
+        ]
+      },
+      "modDir": "Mods",
+      "modTargetDir": "Mods",
+      "modType": "folder",
+      "modScanMode": "folder",
+      "modFileExtensions": [],
+      "frameworks": [],
+      "modCategories": ["服装", "角色", "武器", "场景", "音效", "UI", "其他"]
+    },
+    {
+      "id": "monster-hunter",
+      "name": "怪物猎人：荒野",
+      "steamAppId": "2237110",
+      "coverGradient": "linear-gradient(145deg, #1a1406, #3d2e10, #0d0a03)",
+      "description": "Monster Hunter Wilds - 动作狩猎",
+      "modCount": 0,
+      "category": "action",
+      "tags": ["action", "co-op"],
+      "savePath": "%APPDATA%/capcom/MonsterHunterWilds",
+      "autoLocate": {
+        "gameDir": [
+          { "strategy": "steam", "steamAppId": "2237110", "installDir": "MonsterHunterWilds", "label": "Steam 库（AppId 2237110）" },
+          { "strategy": "glob", "pattern": "MonsterHunter*", "label": "扫描 Steam common 目录" }
+        ],
+        "savePath": [
+          { "strategy": "template", "template": "%APPDATA%/capcom/MonsterHunterWilds", "label": "默认存档目录" },
+          { "strategy": "template", "template": "%APPDATA%/capcom/MonsterHunterWilds", "requireExists": false, "label": "默认存档目录（尚未生成）" }
+        ]
+      },
+      "modDir": "mods",
+      "modTargetDir": "mods",
+      "modType": "folder",
+      "modScanMode": "folder",
+      "modFileExtensions": [],
+      "frameworks": [],
+      "modCategories": ["服装", "角色", "武器", "场景", "音效", "UI", "其他"]
+    },
+    {
+      "id": "genshin",
+      "name": "原神",
+      "steamAppId": "",
+      "coverGradient": "linear-gradient(145deg, #0a1a28, #143a5c, #050d14)",
+      "description": "Genshin Impact - 开放世界 RPG（非 Steam）",
+      "modCount": 0,
+      "category": "rpg",
+      "tags": ["rpg", "gacha", "open-world"],
+      "savePath": "%USERPROFILE%/AppData/LocalLow/miHoYo/原神",
+      "autoLocate": {
+        "gameDir": [
+          { "strategy": "registry", "registryKey": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\miHoYo\\原神", "registryValue": "InstallPath", "relative": "Genshin Impact Game", "label": "官方启动器注册表" },
+          { "strategy": "registry", "registryKey": "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\miHoYo\\Genshin Impact", "registryValue": "InstallPath", "relative": "Genshin Impact Game", "label": "官方启动器注册表（国际服）" },
+          {
+            "strategy": "glob",
+            "parents": [
+              "%PROGRAMFILES%/Genshin Impact",
+              "%PROGRAMFILES(X86)%/Genshin Impact",
+              "C:/Genshin Impact",
+              "D:/Genshin Impact",
+              "D:/Program Files/Genshin Impact",
+              "E:/Genshin Impact",
+              "F:/Genshin Impact"
+            ],
+            "pattern": "Genshin Impact*",
+            "label": "常见安装位置扫描"
+          }
+        ],
+        "savePath": [
+          { "strategy": "template", "template": "%LOCALLOW%/miHoYo/原神", "label": "默认存档目录" },
+          { "strategy": "template", "template": "%LOCALLOW%/miHoYo/Genshin Impact", "label": "默认存档目录（国际服）" },
+          { "strategy": "template", "template": "%USERPROFILE%/AppData/LocalLow/miHoYo/原神", "requireExists": false, "label": "默认存档目录（尚未生成）" }
+        ]
+      },
+      "modDir": "",
+      "modTargetDir": "",
+      "modType": "archive",
+      "modScanMode": "folder",
+      "modFileExtensions": [],
+      "frameworks": [],
+      "modCategories": ["服装", "角色", "武器", "场景", "音效", "UI", "其他"]
+    },
+    {
+      "id": "witcher3",
+      "name": "巫师 3：狂猎",
+      "steamAppId": "292030",
+      "coverGradient": "linear-gradient(145deg, #0d1a14, #1a3330, #060d0a)",
+      "description": "The Witcher 3: Wild Hunt - 开放世界 RPG",
+      "modCount": 0,
+      "category": "rpg",
+      "tags": ["rpg", "open-world"],
+      "savePath": "%USERPROFILE%/Documents/The Witcher 3/gamesaves",
+      "autoLocate": {
+        "gameDir": [
+          { "strategy": "steam", "steamAppId": "292030", "installDir": "The Witcher 3", "label": "Steam 库（AppId 292030）" },
+          { "strategy": "glob", "pattern": "The Witcher 3*", "label": "扫描 Steam common 目录" }
+        ],
+        "savePath": [
+          { "strategy": "template", "template": "%DOCUMENTS%/The Witcher 3/gamesaves", "label": "默认存档目录" },
+          { "strategy": "template", "template": "%USERPROFILE%/Documents/The Witcher 3/gamesaves", "requireExists": false, "label": "默认存档目录（尚未生成）" }
+        ]
+      },
+      "modDir": "mods",
+      "modTargetDir": "mods",
+      "modType": "folder",
+      "modScanMode": "folder",
+      "modFileExtensions": [],
+      "frameworks": [],
+      "modCategories": ["服装", "角色", "武器", "场景", "音效", "UI", "其他"]
+    }
+  ]
+}
