@@ -60,7 +60,9 @@
         "音效",
         "UI",
         "其他"
-      ]
+      ],
+      "defaultRepoPath": "",
+      "coverImage": "https://raw.githubusercontent.com/thethe9/mod-manager-config/main/images/stellar-blade.jpg"
     },
     {
       "id": "wukong",
