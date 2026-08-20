@@ -62,7 +62,8 @@
         "其他"
       ],
       "defaultRepoPath": "",
-      "coverImage": "https://raw.githubusercontent.com/thethe9/mod-manager-config/main/images/stellar-blade.jpg"
+      "coverImage": "https://raw.githubusercontent.com/thethe9/mod-manager-config/main/images/stellar-blade.jpg",
+      "sortOrder": 1
     },
     {
       "id": "wukong",
