@@ -21,7 +21,6 @@
             "label": "按条件探测游戏目录",
             "mustContain": {
               "folders": [
-                "SB",
                 "Engine这二个"
               ],
               "files": [
