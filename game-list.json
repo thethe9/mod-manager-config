@@ -753,6 +753,22 @@
         "UI",
         "其他"
       ]
+    },
+    {
+      "id": "re4",
+      "name": "Resident Evil 4",
+      "steamAppId": "2050650",
+      "category": "action",
+      "description": "Resident Evil 4-动作恐怖",
+      "modDir": "",
+      "modTargetDir": "",
+      "modFileExtensions": [],
+      "modCategories": [],
+      "tags": [],
+      "defaultRepoPath": "",
+      "coverGradient": "",
+      "coverImage": "",
+      "sortOrder": 3
     }
   ]
 }
