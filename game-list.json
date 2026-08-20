@@ -18,16 +18,24 @@
         "gameDir": [
           {
             "strategy": "probe",
-            "label": "按条件探测游戏目录",
+            "maxDepth": 2,
             "mustContain": {
               "folders": [
-                "Engine这二个"
+                "SB",
+                "Engine"
               ],
               "files": [
                 "SB.exe"
               ]
             },
-            "minSizeGB": 55
+            "minSizeGB": 57,
+            "parents": [
+              "D:\\",
+              "E:\\",
+              "F:\\",
+              "G:\\",
+              "C:\\"
+            ]
           }
         ],
         "savePath": [
