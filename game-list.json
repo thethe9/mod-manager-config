@@ -767,8 +767,10 @@
       "tags": [],
       "defaultRepoPath": "",
       "coverGradient": "",
-      "coverImage": "",
-      "sortOrder": 3
+      "coverImage": "https://raw.githubusercontent.com/thethe9/mod-manager-config/main/images/re4.jpg",
+      "sortOrder": 3,
+      "modType": "folder",
+      "modScanMode": "folder"
     }
   ]
 }
