@@ -781,7 +781,48 @@
       "coverImage": "https://raw.githubusercontent.com/thethe9/mod-manager-config/main/images/re4.jpg",
       "sortOrder": 3,
       "modType": "folder",
-      "modScanMode": "folder"
+      "modScanMode": "folder",
+      "autoLocate": {
+        "gameDir": [
+          {
+            "strategy": "probe",
+            "maxDepth": 2,
+            "mustContain": {
+              "files": [
+                "re9.exe",
+                "re_chunk_000.pak"
+              ]
+            },
+            "minSizeGB": 60,
+            "parents": [
+              "C:\\",
+              "D:\\",
+              "E:\\",
+              "F:\\",
+              "G:\\",
+              "H:\\",
+              "I:\\",
+              "J:\\",
+              "K:\\",
+              "L:\\",
+              "M:\\",
+              "N:\\",
+              "O:\\",
+              "P:\\",
+              "Q:\\",
+              "R:\\",
+              "S:\\",
+              "T:\\",
+              "U:\\",
+              "V:\\",
+              "W:\\",
+              "X:\\",
+              "Y:\\",
+              "Z:\\"
+            ]
+          }
+        ]
+      }
     }
   ]
 }
