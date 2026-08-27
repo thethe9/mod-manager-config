@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "updateDate": "2026-08-27",
+  "games": {
+    "genshin": {
+      "name": "验收测试工具",
+      "tools": [
+        {
+          "id": "genshin-验收测试工具",
+          "name": "验收测试工具",
+          "version": "1.0.0",
+          "author": "thethe9",
+          "description": "工具市场闭环验收用测试工具，验证发布链路用，确认可读后请在后台删除。",
+          "gameId": "genshin",
+          "toolType": "性能优化",
+          "source": {
+            "http": "https://pub-619706411a9a4be2a499ea54df46c0a5.r2.dev/tools/genshin/genshin-验收测试工具/1.0.0.7z"
+          },
+          "installMode": "standalone",
+          "requires": [],
+          "conflicts": [],
+          "enabled": true,
+          "iconUrl": "",
+          "coverUrl": "",
+          "homepage": "https://mod-manager-config.pages.dev",
+          "usageNote": "",
+          "tags": [
+            "测试",
+            "验收"
+          ]
+        }
+      ]
+    }
+  }
+}
