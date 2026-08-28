@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updateDate": "2026-08-27",
+  "updateDate": "2026-08-28",
   "games": {
     "genshin": {
       "name": "验收测试工具",
@@ -28,6 +28,27 @@
             "测试",
             "验收"
           ]
+        },
+        {
+          "id": "genshin-串测测试工具",
+          "name": "串测测试工具",
+          "version": "1.0.0",
+          "author": "WorkBuddy",
+          "description": "真机串测专用：验证下载/打开/防拷贝壳双击拦截",
+          "gameId": "genshin",
+          "toolType": "实用工具",
+          "source": {
+            "http": "https://pub-619706411a9a4be2a499ea54df46c0a5.r2.dev/tools/genshin/genshin-串测测试工具/1.0.0.7z"
+          },
+          "installMode": "standalone",
+          "requires": [],
+          "conflicts": [],
+          "enabled": true,
+          "iconUrl": "",
+          "coverUrl": "",
+          "homepage": "",
+          "usageNote": "",
+          "tags": []
         }
       ]
     }
