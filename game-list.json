@@ -822,7 +822,16 @@
             ]
           }
         ]
-      }
+      },
+      "frameworks": [
+        {
+          "id": "reframework",
+          "name": "REFramework",
+          "required": true,
+          "forceEnableMode": "copy"
+        }
+      ],
+      "deployMode": "pak-patch"
     }
   ]
 }
