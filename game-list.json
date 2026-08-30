@@ -458,52 +458,69 @@
       ]
     },
     {
-      "id": "hades2",
-      "name": "哈迪斯 2",
-      "steamAppId": "1145350",
+      "id": "re9",
+      "name": "生化危机9",
+      "steamAppId": "",
       "coverGradient": "linear-gradient(145deg, #1a0a1e, #3d153d, #0d0510)",
       "description": "Hades II - Roguelike 动作",
       "modCount": 0,
       "category": "action",
       "tags": [
-        "action",
-        "roguelike"
+        "action"
       ],
       "savePath": "%USERPROFILE%/Saved Games/Hades II",
       "autoLocate": {
         "gameDir": [
           {
-            "strategy": "steam",
-            "steamAppId": "1145350",
-            "installDir": "Hades II",
-            "label": "Steam 库（AppId 1145350）"
-          },
-          {
-            "strategy": "glob",
-            "pattern": "Hades I*",
-            "label": "扫描 Steam common 目录"
-          }
-        ],
-        "savePath": [
-          {
-            "strategy": "template",
-            "template": "%USERPROFILE%/Saved Games/Hades II",
-            "label": "默认存档目录"
-          },
-          {
-            "strategy": "template",
-            "template": "%USERPROFILE%/Saved Games/Hades II",
-            "requireExists": false,
-            "label": "默认存档目录（尚未生成）"
+            "strategy": "probe",
+            "maxDepth": 2,
+            "mustContain": {
+              "files": [
+                "re9.exe",
+                "re_chunk_000.pak"
+              ]
+            },
+            "minSizeGB": 60,
+            "parents": [
+              "C:\\",
+              "D:\\",
+              "E:\\",
+              "F:\\",
+              "G:\\",
+              "H:\\",
+              "I:\\",
+              "J:\\",
+              "K:\\",
+              "L:\\",
+              "M:\\",
+              "N:\\",
+              "O:\\",
+              "P:\\",
+              "Q:\\",
+              "R:\\",
+              "S:\\",
+              "T:\\",
+              "U:\\",
+              "V:\\",
+              "W:\\",
+              "X:\\",
+              "Y:\\",
+              "Z:\\"
+            ]
           }
         ]
       },
-      "modDir": "Mods",
-      "modTargetDir": "Mods",
-      "modType": "folder",
-      "modScanMode": "folder",
+      "modDir": "",
+      "modTargetDir": "",
       "modFileExtensions": [],
-      "frameworks": [],
+      "frameworks": [
+        {
+          "id": "reframework",
+          "name": "REFramework",
+          "required": true,
+          "forceEnableMode": "copy"
+        }
+      ],
       "modCategories": [
         "服装",
         "角色",
@@ -512,7 +529,11 @@
         "音效",
         "UI",
         "其他"
-      ]
+      ],
+      "defaultRepoPath": "",
+      "coverImage": "https://raw.githubusercontent.com/thethe9/mod-manager-config/main/images/re9.jpg",
+      "deployMode": "pak-patch",
+      "sortOrder": 2
     },
     {
       "id": "stardew",
