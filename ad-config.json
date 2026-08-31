@@ -1,9 +1,9 @@
 {
   "popup": {
-    "enabled": false,
+    "enabled": true,
     "title": "欢迎使用 MOD Manager",
-    "image": "",
-    "link": "",
+    "image": "https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png",
+    "link": "https://www.baidu.com/",
     "intervalDays": 3
   },
   "banner": {
