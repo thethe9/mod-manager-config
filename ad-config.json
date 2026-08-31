@@ -1,5 +1,4 @@
 {
-  "version": "1.0",
   "popup": {
     "enabled": false,
     "title": "欢迎使用 MOD Manager",
@@ -19,5 +18,11 @@
     "image": "",
     "link": "",
     "description": ""
+  },
+  "downloadpage": {
+    "enabled": true,
+    "title": "",
+    "image": "https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png",
+    "link": "https://www.baidu.com/"
   }
 }
