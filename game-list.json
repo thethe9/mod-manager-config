@@ -17,6 +17,17 @@
       "autoLocate": {
         "gameDir": [
           {
+            "strategy": "steam",
+            "steamAppId": "1365610",
+            "installDir": "StellarBlade",
+            "label": "Steam 库（AppId 1365610）"
+          },
+          {
+            "strategy": "glob",
+            "pattern": "StellarBlade*",
+            "label": "扫描 Steam common 目录"
+          },
+          {
             "strategy": "probe",
             "maxDepth": 2,
             "mustContain": {
@@ -458,69 +469,52 @@
       ]
     },
     {
-      "id": "re9",
-      "name": "生化危机9",
-      "steamAppId": "",
+      "id": "hades2",
+      "name": "哈迪斯 2",
+      "steamAppId": "1145350",
       "coverGradient": "linear-gradient(145deg, #1a0a1e, #3d153d, #0d0510)",
       "description": "Hades II - Roguelike 动作",
       "modCount": 0,
       "category": "action",
       "tags": [
-        "action"
+        "action",
+        "roguelike"
       ],
       "savePath": "%USERPROFILE%/Saved Games/Hades II",
       "autoLocate": {
         "gameDir": [
           {
-            "strategy": "probe",
-            "maxDepth": 2,
-            "mustContain": {
-              "files": [
-                "re9.exe",
-                "re_chunk_000.pak"
-              ]
-            },
-            "minSizeGB": 60,
-            "parents": [
-              "C:\\",
-              "D:\\",
-              "E:\\",
-              "F:\\",
-              "G:\\",
-              "H:\\",
-              "I:\\",
-              "J:\\",
-              "K:\\",
-              "L:\\",
-              "M:\\",
-              "N:\\",
-              "O:\\",
-              "P:\\",
-              "Q:\\",
-              "R:\\",
-              "S:\\",
-              "T:\\",
-              "U:\\",
-              "V:\\",
-              "W:\\",
-              "X:\\",
-              "Y:\\",
-              "Z:\\"
-            ]
+            "strategy": "steam",
+            "steamAppId": "1145350",
+            "installDir": "Hades II",
+            "label": "Steam 库（AppId 1145350）"
+          },
+          {
+            "strategy": "glob",
+            "pattern": "Hades I*",
+            "label": "扫描 Steam common 目录"
+          }
+        ],
+        "savePath": [
+          {
+            "strategy": "template",
+            "template": "%USERPROFILE%/Saved Games/Hades II",
+            "label": "默认存档目录"
+          },
+          {
+            "strategy": "template",
+            "template": "%USERPROFILE%/Saved Games/Hades II",
+            "requireExists": false,
+            "label": "默认存档目录（尚未生成）"
           }
         ]
       },
-      "modDir": "",
-      "modTargetDir": "",
+      "modDir": "Mods",
+      "modTargetDir": "Mods",
+      "modType": "folder",
+      "modScanMode": "folder",
       "modFileExtensions": [],
-      "frameworks": [
-        {
-          "id": "reframework",
-          "name": "REFramework",
-          "required": true,
-          "forceEnableMode": "copy"
-        }
-      ],
+      "frameworks": [],
       "modCategories": [
         "服装",
         "角色",
@@ -529,11 +523,7 @@
         "音效",
         "UI",
         "其他"
-      ],
-      "defaultRepoPath": "",
-      "coverImage": "https://raw.githubusercontent.com/thethe9/mod-manager-config/main/images/re9.jpg",
-      "deployMode": "pak-patch",
-      "sortOrder": 2
+      ]
     },
     {
       "id": "stardew",
@@ -638,7 +628,14 @@
       "modType": "folder",
       "modScanMode": "folder",
       "modFileExtensions": [],
-      "frameworks": [],
+      "frameworks": [
+        {
+          "id": "reframework",
+          "name": "REFramework",
+          "required": true,
+          "minVersion": "1.5.9"
+        }
+      ],
       "modCategories": [
         "服装",
         "角色",
@@ -790,7 +787,7 @@
       "id": "re4",
       "name": "生化4-重置版",
       "steamAppId": "2050650",
-      "category": "action",
+      "category": "horror",
       "description": "Resident Evil 4-动作恐怖",
       "modDir": "",
       "modTargetDir": "",
@@ -803,6 +800,111 @@
       "sortOrder": 3,
       "modType": "folder",
       "modScanMode": "folder",
+      "frameworks": [
+        {
+          "id": "reframework",
+          "name": "REFramework",
+          "required": true,
+          "minVersion": "1.5.9"
+        }
+      ],
+      "autoLocate": {
+        "gameDir": [
+          {
+            "strategy": "steam",
+            "steamAppId": "2050650",
+            "installDir": "Resident Evil 4",
+            "label": "Steam 库（AppId 2050650）"
+          },
+          {
+            "strategy": "glob",
+            "pattern": "Resident Evil 4*",
+            "label": "扫描 Steam common 目录"
+          }
+        ]
+      },
+      "deployMode": "pak-patch"
+    },
+    {
+      "id": "resident-evil-requiem",
+      "name": "生化危机：安魂曲",
+      "steamAppId": "3764200",
+      "coverGradient": "linear-gradient(145deg, #2a0606, #4a0a0a, #140202)",
+      "description": "Resident Evil Requiem - 生存恐怖（RE Engine）",
+      "modCount": 0,
+      "category": "horror",
+      "tags": [
+        "horror",
+        "action"
+      ],
+      "savePath": "%USERPROFILE%/Documents/Resident Evil Requiem",
+      "autoLocate": {
+        "gameDir": [
+          {
+            "strategy": "steam",
+            "steamAppId": "3764200",
+            "installDir": "Resident Evil Requiem",
+            "label": "Steam 库（AppId 3764200）"
+          },
+          {
+            "strategy": "glob",
+            "pattern": "Resident Evil Requiem*",
+            "label": "扫描 Steam common 目录"
+          }
+        ],
+        "savePath": [
+          {
+            "strategy": "template",
+            "template": "%USERPROFILE%/Documents/Resident Evil Requiem",
+            "label": "默认存档目录"
+          },
+          {
+            "strategy": "template",
+            "template": "%USERPROFILE%/Documents/Resident Evil Requiem",
+            "requireExists": false,
+            "label": "默认存档目录（尚未生成）"
+          }
+        ]
+      },
+      "modDir": "mods",
+      "modTargetDir": "natives",
+      "modType": "folder",
+      "modScanMode": "folder",
+      "modFileExtensions": [
+        ".pak",
+        ".dll",
+        ".lua"
+      ],
+      "frameworks": [
+        {
+          "id": "reframework",
+          "name": "REFramework",
+          "required": true,
+          "minVersion": "1.5.9"
+        }
+      ],
+      "modCategories": [
+        "服装",
+        "角色",
+        "武器",
+        "场景",
+        "音效",
+        "UI",
+        "其他"
+      ]
+    },
+    {
+      "id": "re9",
+      "name": "生化危机9",
+      "steamAppId": "",
+      "coverGradient": "linear-gradient(145deg, #1a0a1e, #3d153d, #0d0510)",
+      "description": "Hades II - Roguelike 动作",
+      "modCount": 0,
+      "category": "action",
+      "tags": [
+        "action"
+      ],
+      "savePath": "%USERPROFILE%/Saved Games/Hades II",
       "autoLocate": {
         "gameDir": [
           {
@@ -844,6 +946,9 @@
           }
         ]
       },
+      "modDir": "",
+      "modTargetDir": "",
+      "modFileExtensions": [],
       "frameworks": [
         {
           "id": "reframework",
@@ -852,7 +957,19 @@
           "forceEnableMode": "copy"
         }
       ],
-      "deployMode": "pak-patch"
+      "modCategories": [
+        "服装",
+        "角色",
+        "武器",
+        "场景",
+        "音效",
+        "UI",
+        "其他"
+      ],
+      "defaultRepoPath": "",
+      "coverImage": "https://raw.githubusercontent.com/thethe9/mod-manager-config/main/images/re9.jpg",
+      "deployMode": "pak-patch",
+      "sortOrder": 2
     }
   ]
 }
