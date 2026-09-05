@@ -903,5 +903,6 @@
       "deployMode": "pak-patch",
       "sortOrder": 2
     }
-  ]
+  ],
+  "modConfigKey": "72983fde3a40e8eefb5bb387af37c65e268fe446b81b600bf01d666ff412de6e"
 }
