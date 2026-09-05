@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updateDate": "2026-08-28",
+  "updateDate": "2026-09-05",
   "games": {
     "genshin": {
       "name": "验收测试工具",
@@ -22,6 +22,32 @@
           "enabled": true,
           "iconUrl": "",
           "coverUrl": "",
+          "homepage": "",
+          "usageNote": "",
+          "tags": []
+        }
+      ]
+    },
+    "stellar-blade": {
+      "name": "剑星修改器",
+      "tools": [
+        {
+          "id": "stellar-blade-剑星修改器",
+          "name": "剑星修改器",
+          "version": "1.0.0",
+          "author": "gege",
+          "description": "",
+          "gameId": "stellar-blade",
+          "toolType": "启动器",
+          "source": {
+            "http": "https://pub-619706411a9a4be2a499ea54df46c0a5.r2.dev/tools/stellar-blade/stellar-blade-剑星修改器/1.0.0.7z"
+          },
+          "installMode": "standalone",
+          "requires": [],
+          "conflicts": [],
+          "enabled": true,
+          "iconUrl": "",
+          "coverUrl": "https://pub-619706411a9a4be2a499ea54df46c0a5.r2.dev/tool-covers/stellar-blade/stellar-blade-剑星修改器.jpg",
           "homepage": "",
           "usageNote": "",
           "tags": []
