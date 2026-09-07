@@ -412,63 +412,6 @@
       ]
     },
     {
-      "id": "stardew",
-      "name": "星露谷物语",
-      "steamAppId": "413150",
-      "coverGradient": "linear-gradient(145deg, #1a2e14, #3d5c2a, #0d1a0a)",
-      "description": "Stardew Valley - 模拟经营",
-      "modCount": 0,
-      "category": "rpg",
-      "tags": [
-        "simulation",
-        "farming"
-      ],
-      "savePath": "%APPDATA%/StardewValley/Saves",
-      "autoLocate": {
-        "gameDir": [
-          {
-            "strategy": "steam",
-            "steamAppId": "413150",
-            "installDir": "Stardew Valley",
-            "label": "Steam 库（AppId 413150）"
-          },
-          {
-            "strategy": "glob",
-            "pattern": "Stardew Valley*",
-            "label": "扫描 Steam common 目录"
-          }
-        ],
-        "savePath": [
-          {
-            "strategy": "template",
-            "template": "%APPDATA%/StardewValley/Saves",
-            "label": "默认存档目录"
-          },
-          {
-            "strategy": "template",
-            "template": "%APPDATA%/StardewValley/Saves",
-            "requireExists": false,
-            "label": "默认存档目录（尚未生成）"
-          }
-        ]
-      },
-      "modDir": "Mods",
-      "modTargetDir": "Mods",
-      "modType": "folder",
-      "modScanMode": "folder",
-      "modFileExtensions": [],
-      "frameworks": [],
-      "modCategories": [
-        "服装",
-        "角色",
-        "武器",
-        "场景",
-        "音效",
-        "UI",
-        "其他"
-      ]
-    },
-    {
       "id": "monster-hunter",
       "name": "怪物猎人：荒野",
       "steamAppId": "2237110",
