@@ -287,63 +287,6 @@
       ]
     },
     {
-      "id": "palworld",
-      "name": "幻兽帕鲁",
-      "steamAppId": "1623730",
-      "coverGradient": "linear-gradient(145deg, #0a2818, #1a5030, #06140c)",
-      "description": "Palworld - 生存建造",
-      "modCount": 0,
-      "category": "survival",
-      "tags": [
-        "survival",
-        "crafting"
-      ],
-      "savePath": "%USERPROFILE%/AppData/Local/Pal/Saved",
-      "autoLocate": {
-        "gameDir": [
-          {
-            "strategy": "steam",
-            "steamAppId": "1623730",
-            "installDir": "Palworld",
-            "label": "Steam 库（AppId 1623730）"
-          },
-          {
-            "strategy": "glob",
-            "pattern": "Palworld*",
-            "label": "扫描 Steam common 目录"
-          }
-        ],
-        "savePath": [
-          {
-            "strategy": "template",
-            "template": "%USERPROFILE%/AppData/Local/Pal/Saved",
-            "label": "默认存档目录"
-          },
-          {
-            "strategy": "template",
-            "template": "%USERPROFILE%/AppData/Local/Pal/Saved",
-            "requireExists": false,
-            "label": "默认存档目录（尚未生成）"
-          }
-        ]
-      },
-      "modDir": "Mods",
-      "modTargetDir": "Mods",
-      "modType": "folder",
-      "modScanMode": "folder",
-      "modFileExtensions": [],
-      "frameworks": [],
-      "modCategories": [
-        "服装",
-        "角色",
-        "武器",
-        "场景",
-        "音效",
-        "UI",
-        "其他"
-      ]
-    },
-    {
       "id": "baldurs-gate3",
       "name": "博德之门 3",
       "steamAppId": "1086940",
