@@ -1,6 +1,6 @@
 {
   "popup": {
-    "enabled": true,
+    "enabled": false,
     "title": "欢迎使用 MOD Manager",
     "image": "https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png",
     "link": "https://www.baidu.com/",
@@ -19,10 +19,11 @@
     "link": "",
     "description": ""
   },
-  "downloadpage": {
-    "enabled": true,
-    "title": "百度",
-    "image": "https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png",
-    "link": "https://www.baidu.com/"
+  "download": {
+    "enabled": false,
+    "title": "",
+    "image": "",
+    "link": "",
+    "description": ""
   }
 }
